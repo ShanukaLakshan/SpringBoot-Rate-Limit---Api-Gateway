@@ -14,8 +14,8 @@ spring:
           filters:
             - name: RequestRateLimiter
               args:
-                redis-rate-limiter.replenishRate: 20
-                redis-rate-limiter.burstCapacity: 40
+                redis-rate-limiter.replenishRate: 3
+                redis-rate-limiter.burstCapacity: 8
                 redis-rate-limiter.requestedTokens: 1
   data:
     redis:
